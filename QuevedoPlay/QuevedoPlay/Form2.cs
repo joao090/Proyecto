@@ -1,4 +1,5 @@
-﻿using QuevedoPlay.Estilos;
+﻿using ConsoleApp4.Forms;
+using QuevedoPlay.Estilos;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -26,7 +27,9 @@ namespace QuevedoPlay
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Orientacion orientacion = new Orientacion(this);
+            orientacion.Show();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)

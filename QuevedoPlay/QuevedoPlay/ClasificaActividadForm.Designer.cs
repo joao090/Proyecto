@@ -38,6 +38,7 @@
             this.Name = "ClasificaActividadForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClasificaActividadForm";
+            this.Load += new System.EventHandler(this.ClasificaActividadForm_Load);
             this.ResumeLayout(false);
 
         }

@@ -437,6 +437,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(619, 509);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlScroll);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

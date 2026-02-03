@@ -196,12 +196,11 @@
     <None Include="Resources\mapOfi.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\abc\ConsoleApp4\ConsoleApp4\ConsoleApp4.csproj">
+    <ProjectReference Include="..\..\abc\ConsoleApp4\ConsoleApp4\ConsoleApp4.csproj">
       <Project>{36d6782a-2ae3-4fe4-bf09-aaad63fcf224}</Project>
       <Name>ConsoleApp4</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\Imagenes\Avistamiento.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

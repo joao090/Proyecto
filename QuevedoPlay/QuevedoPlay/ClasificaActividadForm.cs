@@ -35,7 +35,7 @@ namespace QuevedoPlay
         private int puntaje = 0;
         private int errores = 0;
 
-        private int tiempoRestante = 60;
+        private int tiempoRestante = 30;
         private const int bonusPorSegundo = 2;
         private int nivelActual = 1;
         private const int maxErrores = 5;
@@ -126,7 +126,7 @@ namespace QuevedoPlay
 
             lblPuntaje = MakeStatLabel("Puntaje: 0");
             lblErrores = MakeStatLabel("Errores: 0/5");
-            lblTiempo = MakeStatLabel("Tiempo: 60s");
+            lblTiempo = MakeStatLabel("Tiempo: 30s");
             lblNivel = MakeStatLabel("Nivel: 1");
 
             pnlHeader.Controls.Add(lblTitulo);
@@ -844,5 +844,9 @@ namespace QuevedoPlay
             }
         }
 
+        private void ClasificaActividadForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

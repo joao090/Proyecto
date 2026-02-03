@@ -132,7 +132,7 @@ namespace ConsoleApp4
                 if (Oportunidades == 8)
                 {
                     lblMensaje.Visible = true;
-                    //Muestra la palabra que el usuario intentaba descubrir 
+                   
                     for ( int indiceValorLetra = 0; indiceValorLetra < PalabraSeleccionada.Length; indiceValorLetra++)
                     {
                         Button btnLetra = this.Controls.Find("Adivinado" + indiceValorLetra, true).FirstOrDefault() as Button;
@@ -140,7 +140,7 @@ namespace ConsoleApp4
 
                     }
 
-                    // Desactiva las fichas y cambia le botón de reinicio 
+                    
                     flFichasDeJuego.Enabled = false;
                     btnIniciarJuego.Image = Properties.Resources.btnStart;
                 }
@@ -154,7 +154,7 @@ namespace ConsoleApp4
 
         private void btnIniciarJuego_Click(object sender, EventArgs e)
         {
-            //Iniciar Juego
+           
             IniciarJuego();
         }
 
@@ -162,6 +162,13 @@ namespace ConsoleApp4
         {
             _formOrientacion.Show();
             Hide();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Orientacion X = new Orientacion(this);
+            X.Show();
+            this.Close();
         }
     }
 }
